@@ -32,7 +32,16 @@ module.exports = function(grunt) {
         src: ['*.coffee'],
         dest: 'deploy/script/js',
         ext: '.js'
-      }
+      },
+    },
+    watch: {
+      options: {
+        livereload: true,
+      },
+      css: {
+        files: ['src/sass/*.scss'],
+        tasks: ['compass'],
+      },
     },
   });
 
@@ -40,7 +49,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-jade');
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  
   // 默认被执行的任务列表。
   grunt.registerTask('default', [
     'compass',

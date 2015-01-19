@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>计时器效果</title>
+  </head>
+  <body>
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+    <div id="mountnode"></div>
+    <script type="text/jsx">
+      var mountNode = document.getElementById('mountnode');
+      var Timer = React.createClass({
+        //设置初始状态
+        getInitialState: function() {
+          return {total: 0};
+        },
+        tick: function() {
+          this.setState({total: this.state.total + 1});
+        },
+        //组件加载完后的毁掉函数
+        componentDidMount: function() {
+          this.interval = setInterval(this.tick, 1000);
+        },
+        //组件卸载后的毁掉函数
+        componentWillUnmount: function() {
+          clearInterval(this.interval);
+        },
+        render: function() {
+          return (
+            <i>计时器: {this.state.total}</i>
+          );
+        }
+      });
+       
+      React.render(<Timer />, mountNode);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="80" height="80" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+<rect 
+  x= "15"
+  y= "10"
+  width= "20" 
+  height= "60"
+  rx= "5"
+  ry= "5"
+  fill= "rgb(1,191,231)"
+  stroke-width= "0" 
+  stroke= "rgb(1,191,231)"/>
+<rect 
+  x= "45"
+  y= "10"
+  width= "20" 
+  height= "60"
+  rx= "5"
+  ry= "5"
+  fill= "rgb(1,191,231)"
+  stroke-width= "0" 
+  stroke= "rgb(1,191,231)"/>
+
+</svg>

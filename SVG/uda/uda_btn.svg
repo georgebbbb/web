@@ -1,0 +1,46 @@
+<?xml version= "1.0" standalone= "no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width= "160" height= "70" version= "1.1"
+xmlns= "http://www.w3.org/2000/svg">
+
+<rect 
+  width= "160" 
+  height= "70" 
+  fill= "rgb(1,191,231)"
+  stroke-width= "0" 
+  stroke= "rgb(1,191,231)"/>
+
+<circle 
+  cx= "0" 
+  cy= "20" 
+  r= "10" 
+  stroke= "rgb(1,191,231)"
+  stroke-width= "2" 
+  fill= "#fff"/>
+<circle 
+  cx= "0" 
+  cy= "50" 
+  r= "10" 
+  stroke= "rgb(1,191,231)" 
+  stroke-width= "2" 
+  fill= "#fff"/>
+
+<circle 
+  cx= "160" 
+  cy= "20" 
+  r= "10" 
+  stroke= "rgb(1,191,231)" 
+  stroke-width= "2" 
+  fill= "#fff"/>
+<circle 
+  cx= "160" 
+  cy= "50" 
+  r= "10" 
+  stroke= "rgb(1,191,231)" 
+  stroke-width= "2" 
+  fill= "#fff"/>
+
+</svg>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>待办事件</title>
+  </head>
+  <body>
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+    <div id="mountnode"></div>
+    <script type="text/jsx">
+      var mountNode = document.getElementById('mountnode');
+      var TodoList = React.createClass({
+        render: function() {
+          var createItem = function(itemText) {
+            return <li>{itemText}</li>;
+          };
+          return <ul>{this.props.items.map(createItem)}</ul>;
+        }
+      });
+      var TodoApp = React.createClass({
+        getInitialState: function() {
+          return {items: [], text: ''};
+        },
+        onChange: function(e) {
+          this.setState({text: e.target.value});
+        },
+        handleSubmit: function(e) {
+          e.preventDefault();
+          var nextItems = this.state.items.concat([this.state.text]);
+          console.log(nextItems);
+          var nextText = '';
+          this.setState({items: nextItems, text: nextText});
+        },
+        render: function() {
+          return (
+            <div>
+              <h3>代办事件</h3>
+              <TodoList items={this.state.items} />
+              <form onSubmit={this.handleSubmit}>
+                <input onChange={this.onChange} value={this.state.text} />
+                <button>{'添加第' + (this.state.items.length + 1) + '代办事件'}</button>
+              </form>
+            </div>
+          );
+        }
+      });
+      React.renderComponent(<TodoApp />, mountNode);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8"/>
+    <title>React mode</title>
+  </head>
+  <body>
+    <div id="mountnode"></div>
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+    <script type="text/jsx">
+    /*定义一个组件*/
+    var HelloMessage = React.createClass({
+      render: function(){
+        return <div>hello {this.props.name}</div>;
+      }
+    });
+    /*获取需要展示的DOM节点*/
+    var mountnode = document.getElementById('mountnode');
+    /*渲染组件*/
+    React.render(<HelloMessage name="React"/>, mountnode);
+    </script>
+  </body>
+</html>

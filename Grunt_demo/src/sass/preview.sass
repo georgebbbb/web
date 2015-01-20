@@ -1,0 +1,183 @@
+@import "common.sass"
+
+figure
+  padding: 0px
+  margin: 0px
+
+  figcaption
+    padding: 0px
+    margin: 0px
+
+hr 
+  margin-top: 15px
+  border: 0px
+  border-top: 1px solid #E0E0E0
+hr.hr-none 
+  display: none
+
+.row_stem_img
+  display: block
+
+.clear
+  clear: both
+
+.placeholder 
+  display: inline-block
+  padding: 0 10px
+  border-bottom: 1px solid #666
+  font-size: 14px
+  line-height: 16px
+
+
+#container
+  margin: 0px 10px
+  
+.origins 
+  margin-top: 10px
+  color: $origins-color
+  font-size: $origins-size
+.origins span 
+  margin: 0px 4px
+  font-weight: 600
+
+.instruction
+  margin-top: 10px
+  font-size: $instruction-size
+  color: $instruction-color
+
+.row_stem
+  margin-top: 10px
+  .richtext
+    color: $richtext-color
+    .type
+      color: $origins-color
+      font-size: $origins-size
+
+.options
+  margin-top: 10px
+  color: $richtext-color
+  .seq
+    float: left
+
+.answer
+  margin-top: 10px
+  text-align: left
+  .label
+    color: $SpanColor
+  .ans
+    color: #049600
+
+.res_solution_method
+  color: #000
+  margin-top: 20px    
+.solution_method
+  margin-top: 10px
+  span
+    color: #00BDE5
+
+.analysis, .solution, .res_answer
+  margin-top: 10px
+  span
+    color: $SpanColor
+  .introduce
+    color: $richtext-color
+
+.res_q
+  margin-top: 10px
+  span
+    color: $richtext-color
+  .res_q_index
+    margin-right: 5px
+   
+.res_answer
+  margin-bottom: 20px
+
+.process
+  margin-top: 10px
+  span
+    color: $SpanColor
+  p
+    margin: 6px 0px
+    display: table
+    background-color: #cccccc
+    height: 35px
+    -moz-border-radius: 17px
+    -webkit-border-radius: 17px
+    border-radius: 17px 
+    span
+      margin: 0px 10px
+      line-height: 35px
+      color: #fff
+      
+.knowledge
+  margin-top: 10px
+  span
+    color: $SpanColor
+.knowledge p 
+  margin: 4px 0px
+  padding: 0px
+  display: table
+  background: url(../image/leftbtn.png) left 0 no-repeat
+  background-color: #00BDE5
+  background-size: 82px 36px
+.knowledge p > span 
+  margin: 0px
+  min-width: 41px
+  text-align: center
+  display: table
+  font-size: 14px
+  padding: 9px 11px 9px 0px
+  background: url(../image/rightbtn.png) right 0 no-repeat 
+  background-color: #00BDE5
+  background-size: 82px 36px
+  color: #fff
+  margin: 0 0 0 11px 
+
+.difficulty
+  margin-top: 10px
+  span
+    color: $SpanColor
+  margin: 12px 0px
+.difficulty > ul 
+  display: inline-block
+.difficulty > ul li 
+  display: inline-block
+  width: 14px
+  height: 12px
+  background: url(../image/star.png) 0px 0px no-repeat
+  background-size: 28px 12px
+.difficulty > ul li.half 
+  background: url(../image/star.png) 14px 0px no-repeat
+  background-size: 28px 12px
+
+
+.popimg 
+  position: relative
+  display: block
+  width: 100%
+  height: 100%
+  background-color: #787878
+  z-index: 996
+
+.imgloading 
+  position: fixed
+  z-index: 997
+  bottom: 10px
+  left: 100px
+    
+.imgloading img 
+  width: 45px
+
+.lgimg 
+  position: fixed
+  z-index: 997
+  width: 100%
+
+.poplgx 
+  position: fixed
+  width: 25px
+  height: 25px
+  background: url(../image/dwindowsX.png) 0px 0px no-repeat
+  z-index: 999
+  top: 10px
+  right: 10px

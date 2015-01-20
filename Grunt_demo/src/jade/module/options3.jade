@@ -1,0 +1,8 @@
+.options
+  ul
+    each val, index in {A:'<img src="image/test2.png" class="options_img"/>',B:'<img src="image/test2.png" class="options_img"/>',C:'<img src="image/test2.png" class="options_img"/>',D:'<img src="image/test2.png" class="options_img"/>'}
+      li
+        span.seq= index
+          |.
+        span.richtext!= val
+  .clear

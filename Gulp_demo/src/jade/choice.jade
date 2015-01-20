@@ -1,0 +1,29 @@
+extends layout.jade
+block title
+  |选择题
+block body
+  //来源
+  include module/origin.jade
+  //介绍
+  include module/instruction.jade
+  //题干
+  include module/row_stem.jade
+  //选项
+  include module/options.jade
+  <hr/>
+  //答案
+  include module/answer.jade
+  
+  //解析
+  include module/analisis.jade
+  //解题过程
+  include module/solution.jade
+
+  //考点
+  include module/knowledge.jade
+  //解题方法
+  include module/process.jade
+  //相关考点
+  include module/related_knowledge.jade
+  //难度
+  include module/difficulty.jade

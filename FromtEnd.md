@@ -12,7 +12,17 @@ Node.js的出现促进了前端在近几年的快速发展
 
 ###[grunt](http://gruntjs.com/)
 
+测试、检查、合并、压缩、格式化、部署文件生成，并监听文件在改动.
+
+NPM 10706
 ###[gulp](http://gulpjs.com/)
+
+[插件列表](http://gratimax.net/search-gulp-plugins/)
+
+NPM 3959
+
+[npmjs-gulp](https://www.npmjs.com/package/gulp)
+
 ##
 
 ###[jade](http://jade-lang.com/)

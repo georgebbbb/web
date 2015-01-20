@@ -1,0 +1,16 @@
+html, body, div, ul, ol, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Microsoft YaHei", Helvetica, Calibri, Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", STXihei, SimHei, sans-serif;
+  font-size: 16px; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+ul li, ol li {
+  list-style: none; }
+
+/*# sourceMappingURL=common.css.map */

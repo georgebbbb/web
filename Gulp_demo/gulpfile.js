@@ -37,10 +37,10 @@ gulp.task('copy', function() {
 });
 gulp.task('scripts',function(){
   return gulp.src(src.coffee)
-    .pipe(sourcemaps.init())
-      .pipe(coffee())
-      .pipe(uglify())
-      //.pipe(concat('all.js'))
+    .pipe(sourcemaps.init())//生成了一个source map文件，编码后和编码前对应的位置
+      .pipe(coffee())//环节1
+      .pipe(uglify())//环节2
+      //.pipe(concat('all.js'))//环节3
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(build.js))
 });

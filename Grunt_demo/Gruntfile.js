@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-  // Project configuration.
   // LiveReload的默认端口号，你也可以改成你想要的端口号
   var lrPort = 35728;
   // 使用connect-livereload模块，生成一个与LiveReload脚本
@@ -17,6 +16,7 @@ module.exports = function(grunt) {
       ];
   };
 
+//=============================
   // 项目配置(任务配置)
   grunt.initConfig({
     // 读取我们的项目配置并存储到pkg属性中
@@ -171,7 +171,7 @@ module.exports = function(grunt) {
       }
     },
   });
-
+//=======================================
   // 加载任务的插件。
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
@@ -187,7 +187,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  
+//===============================  
   // 默认被执行的任务列表。
   grunt.registerTask('default', [
     'clean',

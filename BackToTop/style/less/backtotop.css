@@ -1,0 +1,101 @@
+/*
+*	回到头部
+*	author:		FuYin
+*	homepage:	http://weibo.com/fugardenia
+*	E-mail:		fooying#qq.com
+*	version:	1.0.0
+**/
+
+/*<!-- 右下侧图标start -->
+<div id="backtop"></div>
+<!-- 右下侧图标end -->*/
+.backtotops {
+  position: fixed;
+  right: 3%;
+  bottom: 120px;
+  background: url(../../images/r_b.png) 0px bottom no-repeat;
+  /*宽度和高度 属于css3样式IE不支持*/
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  z-index: 999;
+}
+.backtotops .btn {
+  width: 49px;
+  height: 50px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.backtotops .btn-qq {
+  background: url(../../images/r_qq.png) 0px 0px no-repeat;
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  background-color: #6da9de;
+}
+.backtotops .btn-qq:hover {
+  background-color: #488bc7;
+}
+.backtotops a.btn-qq,
+.backtotops a.btn-qq:visited {
+  background: url(../../images/r_qq.png) 0px 0px no-repeat;
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  background-color: #6da9de;
+  text-decoration: none;
+  display: block;
+}
+.backtotops .btn-wx {
+  background: url(../../images/r_wx.png) 0px 0px no-repeat;
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  background-color: #78c340;
+}
+.backtotops .btn-wx:hover {
+  background-color: #58a81c;
+}
+.backtotops .btn-wx .pic {
+  position: absolute;
+  left: -160px;
+  top: 0px;
+  display: none;
+  width: 160px;
+  height: 160px;
+}
+.backtotops .btn-phone {
+  background: url(../../images/r_phone.png) 0px 0px no-repeat;
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  background-color: #fbb01f;
+}
+.backtotops .btn-phone:hover {
+  background-color: #ff811b;
+}
+.backtotops .btn-phone .phone {
+  background-color: #ff811b;
+  position: absolute;
+  width: 160px;
+  left: -160px;
+  top: 0px;
+  line-height: 50px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+.backtotops .btn-top {
+  background: url(../../images/r_top.png) 0px 0px no-repeat;
+  background-size: 49px 50px;
+  -webkit-background-size: 49px 50px;
+  -o-background-size: 49px 50px;
+  background-color: #666666;
+  display: none;
+}
+.backtotops .btn-top:hover {
+  background-color: #444;
+}

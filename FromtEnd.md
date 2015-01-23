@@ -22,15 +22,20 @@ avaScript世界的构建工具
 NPM 10706
 
 package.json  列出各种任务所依赖的插件。
-Gruntfile.js  任务配置文件。
+Gruntfile.js  任务`配置`文件。
 
 ###[gulp](http://gulpjs.com/)
 Automate and enhance your workflow<br/>
 自动化和提高您的工作流程
 
+通过把API降到最少，你能在很短的时间内学会Gulp。（API 5个）<br/>
+Gulp相比Grunt更有设计感，核心设计基于Unix流的概念，通过管道连接，不需要写中间文件。<br/>
 
 一个基于流的构建系统。
 
+pipe 管道
+
+水流
 
 [插件列表](http://gratimax.net/search-gulp-plugins/)
 
@@ -75,7 +80,29 @@ Browserify 跑在浏览器上的Node程序。
 ##
 ###[AngularJS](https://angularjs.org/)
 
+Action 功能 操作
+
+Controller 控制器
+
+Model 模型
+
+View 视图
+
 ###[REACT](http://facebook.github.io/react/)
+Action
+Dispatcher 是中心枢纽，管理着Flux应用中的所有数据流。
+Store 包含了应用的所有数据
+Action
+View
+
+当Action触发时，Dispatcher决定了Store如何更新。
+当Store变化后，View同时被更新，
+  还可以生成一个由Dispatcher处理的Action。
+
+[Facebook：MVC不适合大规模应用，改用Flux](http://www.linuxeden.com/html/news/20140519/151836.html)
+
+.
+---
 
 animate.css
 D3.js
